@@ -1,0 +1,19 @@
+prompt: |-
+  You are comparing an alternative wording for a D&D ability to the original ability. Here is the data:
+  [BEGIN DATA]
+  ************
+  [Original]: {ideal}
+  ************
+  [Alternative]: {completion}
+  ************
+  [END DATA]
+  Compare the alternative wording with the original wording. Ignore any differences in style, grammar, or punctuation.
+  The alternate wording may contain less or more information than the original wording, or it may conflict with it. Determine which case applies. Answer the question by selecting one of the following options:
+  (A) The alternate wording does not contain all the information in the original wording but is fully consistent with it.
+  (B) The alternate wording contains more information than the original wording and is fully consistent with it.
+  (C) The alternate wording contains all the same details as the original wording.
+  (D) There is a disagreement between the alternate wording and the original wording.
+  (E) The answers differ, but these differences don't cause any differences in game mechanics.
+choice_strings: ABCDE
+input_outputs:
+  input: completion
